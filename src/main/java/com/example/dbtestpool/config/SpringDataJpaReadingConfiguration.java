@@ -68,7 +68,7 @@ public class SpringDataJpaReadingConfiguration {
         hikariConfig.setPassword("password");
         hikariConfig.setMaximumPoolSize(5);
         hikariConfig.setConnectionTestQuery("SELECT 1");
-        hikariConfig.setPoolName("readingHikariCP");
+        hikariConfig.setPoolName("hikariREAD");
 
         hikariConfig.addDataSourceProperty("dataSource.cachePrepStmts", "true");
         hikariConfig.addDataSourceProperty("dataSource.prepStmtCacheSize", "250");

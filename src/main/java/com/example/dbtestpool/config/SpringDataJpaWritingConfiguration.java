@@ -54,7 +54,7 @@ public class SpringDataJpaWritingConfiguration {
         hikariConfig.setPassword("password");
         hikariConfig.setMaximumPoolSize(5);
         hikariConfig.setConnectionTestQuery("SELECT 1");
-        hikariConfig.setPoolName("writeHikariCP");
+        hikariConfig.setPoolName("hikariWRITE");
 
         hikariConfig.addDataSourceProperty("dataSource.cachePrepStmts", "true");
         hikariConfig.addDataSourceProperty("dataSource.prepStmtCacheSize", "250");
